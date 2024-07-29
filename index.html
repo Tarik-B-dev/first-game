@@ -9,9 +9,18 @@
 </head>
 <body>
    <div id="accueil" class="container-accueil">
-
+      <div class="pseudo-input">
+         <label id="label" for="pseudo" class="pseudo-label">Pseudo :</label>
+         <input type="text" id="pseudo" class="pseudo-input" placeholder="Entrez votre pseudo">
+         <button id="save-pseudo"> Play</button>
+      </div>
    </div>
    <div id="app" class="container-app">
+      <div class="score">
+         <p id="score"></p>
+         <p id="player-name"></p>
+         <button id="reset-button">Réinitialiser</button>
+      </div>
     <div class="container">
         <h1>Pierre, Feuille, Ciseaux</h1>
         <div class="choices">
@@ -25,18 +34,6 @@
             <p id="game-result">Résultat: </p>
         </div>
     </div>
-
-      <!-- <div class="choices">
-         <div class="choice">
-
-         </div>
-         <div class="choice">
-
-         </div>
-         <div class="choice">
-
-         </div>
-      </div> -->
    </div>
 </body>
 </html>
