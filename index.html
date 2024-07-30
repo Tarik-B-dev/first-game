@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Pierre-feuille-ciseaux</title>
-   <link rel="stylesheet" href="/assets/style.css">
-   <script src="/assets/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre-feuille-ciseaux</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/script.js" defer></script>
 </head>
+
 <body>
-   <header>
-      <img src="photo/pierre-papier-ciseaux (1).png" alt="">
-   
-   </header>
-   <main>
-   <div id="accueil" class="container-accueil">
-      <div class="pseudo-input">
-         <label id="label" for="pseudo" class="pseudo-label">Pseudo :</label>
-         <input type="text" id="pseudo" class="pseudo-input" placeholder="Entrez votre pseudo">
-         <button id="save-pseudo"> Play</button>
-      </div>
-   </div>
-   <div id="app" class="container-app">
-      <div class="score">
-         <p id="score"></p>
-         <p id="player-name"></p>
-         <button id="reset-button">Réinitialiser</button>
-      </div>
-    <div class="container">
-        <h1>Pierre, Feuille, Ciseaux</h1>
-        <div class="choices">
-            <button id="pierre" class="choice-button">Pierre</button>
-            <button id="feuille" class="choice-button">Feuille</button>
-            <button id="ciseaux" class="choice-button">Ciseaux</button>
+    <header>
+        <img src="/assets/photos/pierre_papier_ciseaux.png" alt="icon">
+    </header>
+    <main>
+        <div class="title">
+            <h1>Pierre, Feuille, Ciseaux</h1>
         </div>
-        <div class="results">
-            <p id="player-choice">Vous avez choisi: </p>
-            <p id="bot-choice">Le bot a choisi: </p>
-            <p id="game-result">Résultat: </p>
+        <div id="accueil" class="container-accueil">
+            <div class="pseudo-input">
+                <label for="pseudo" class="pseudo-label">Pseudo :</label>
+                <input type="text" id="pseudo" class="pseudo-input" placeholder="Entrez votre pseudo">
+                <button id="save-pseudo">Play</button>
+            </div>
         </div>
-    </div>
-   </div>
-</main>
+        <div id="resultat" class="results">
+            <p id="game-result"></p>
+        </div>
+        <div id="app" class="container-app">
+            <div class="score">
+                <div class="player">
+                    <p id="score"></p>
+                    <p id="player-name"></p>
+                </div>
+                <div class="btn-reset">
+                    <button id="reset-button">Réinitialiser</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="choices">
+                    <button id="pierre" class="choice-button">
+                        <img src="/assets/photos/pierre.png" alt="image pierre">
+                    </button>
+                    <button id="feuille" class="choice-button">
+                        <img src="/assets/photos/feuille.png" alt="image feuille">
+                    </button>
+                    <button id="ciseaux" class="choice-button">
+                        <img src="/assets/photos/ciseaux.png" alt="image ciseaux">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
