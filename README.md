@@ -1,0 +1,1 @@
+# Jeu réalisé en mode projet en application de la philosophie agile et cérémonies SCRUM 
